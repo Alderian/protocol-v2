@@ -88,6 +88,7 @@ const buidlerConfig: HardhatUserConfig = {
     apiKey: {
       polygonMumbai: process.env.ETHERSCAN_POLYGON_KEY || '',
       goerli: process.env.ETHERSCAN_KEY || '',
+      sepolia: process.env.ETHERSCAN_KEY || '',
       fuji: process.env.ETHERSCAN_SNOWTRACE_KEY || '',
       mainnet: process.env.ETHERSCAN_KEY || '',
       polygon: process.env.ETHERSCAN_POLYGON_KEY || '',
@@ -109,6 +110,7 @@ const buidlerConfig: HardhatUserConfig = {
       chainId: COVERAGE_CHAINID,
     },
     kovan: getCommonNetworkConfig(eEthereumNetwork.kovan, 42),
+    sepolia: getCommonNetworkConfig(eEthereumNetwork.sepolia, 11155111),
     ropsten: getCommonNetworkConfig(eEthereumNetwork.ropsten, 3),
     main: getCommonNetworkConfig(eEthereumNetwork.main, 1),
     tenderly: getCommonNetworkConfig(eEthereumNetwork.tenderly, 3030),

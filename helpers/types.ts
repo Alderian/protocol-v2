@@ -9,6 +9,7 @@ export type eNetwork = eEthereumNetwork | ePolygonNetwork | eXDaiNetwork | eAval
 export enum eEthereumNetwork {
   buidlerevm = 'buidlerevm',
   kovan = 'kovan',
+  sepolia = 'sepolia',
   ropsten = 'ropsten',
   main = 'main',
   coverage = 'coverage',
@@ -34,6 +35,7 @@ export enum eAvalancheNetwork {
 
 export enum EthereumNetworkNames {
   kovan = 'kovan',
+  sepolia = 'sepolia',
   ropsten = 'ropsten',
   main = 'main',
   matic = 'matic',
@@ -430,6 +432,7 @@ export interface iEthereumParamsPerNetwork<T> {
   [eEthereumNetwork.coverage]: T;
   [eEthereumNetwork.buidlerevm]: T;
   [eEthereumNetwork.kovan]: T;
+  [eEthereumNetwork.sepolia]: T;
   [eEthereumNetwork.ropsten]: T;
   [eEthereumNetwork.main]: T;
   [eEthereumNetwork.hardhat]: T;
